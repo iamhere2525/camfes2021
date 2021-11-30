@@ -1,69 +1,46 @@
-const quiz = [
-    {
-      question :'尼子の部屋のキーワードを打ってね',
-      correct : '尼子'
-    },
-    {
-      question: 'CMのキーワードを打ってね',
-      correct: 'CM'
-    },
-    {
-      question: '音楽祭のキーワードを打ってね',
-      correct: '音楽祭'
-    }
-  ];
-//   quiz.sort(() => 0.5 - Math.random());
-  
-  const quizLength = quiz.length;
-  let quizIndex = 0;
-  let score = 0;
-  
-  const answerInput = document.getElementById('answer-input');
-  const submitButton = document.getElementById('submit-button');
-  const titles = document.getElementsByClassName('js-question');
-  console.log(titles[0]);
-  // クイズの問題文を表示
-  const setupQuiz = () => {
-      for(let i = 0; i < quizLength; i ++) {
-          titles[i].textContent = quiz[i].question;
+const app = new Vue({
+  el: "#app",
+  data: {
+    tabNum: 0,
+    correctImage: -1,
+    titles: ["尼子の部屋", "CM", "音楽祭"],
+    questions: [
+      {
+        question: "尼子の部屋のキーワードを打ってね",
+        input: "",
+        correct: "尼子",
+      },
+      {
+        question: "CMのキーワードを打ってね",
+        input: "",
+        correct: "CM",
+      },
+      {
+        question: "音楽祭のキーワードを打ってね",
+        input: "",
+        correct: "音楽祭",
+      },
+    ],
+    images: [
+      "10_12_15_8_14_659.png",
+    ]
+  },
+  computed: {
+    tabClass: function() {
+      return function (index) {
+        const tabColor = index % 3;
+        return ["tab-title", "title" + tabColor];
       }
-    // document.getElementById('js-question').textContent = quiz[quizIndex].question;
-    answerInput.value = '';
-  };
-  
-  setupQuiz();
-  
-  const clickHandler = () => {
-    quiz[quizIndex].input = answerInput.value;
-    if (quiz[quizIndex].correct === answerInput.value) {
-      window.alert('正解');
-      score++;
-    } else {
-      window.alert('不正解');
     }
-    quizIndex++; // 次の問題へ
-    if (quizIndex < quizLength) {
-      setupQuiz();
-    } else {
-      window.alert('終了 正解数は' + score + '/' + quizLength + 'です');
-      showAllAnswers();
+  },
+  methods: {
+    answer(index) {
+      if (this.questions[index].input === this.questions[index].correct) {
+        this.correctImage = index;
+      } else {
+        alert("不正解");
+      }
     }
-  };
-  
-  // ボタンクリックで正誤判定
-  submitButton.addEventListener('click', () => {
-    clickHandler();
-  });
-  
-  const showAllAnswers = () => {
-    const container = document.getElementById('all-answers-container');
-    container.style.display = 'block';
-  
-    const tbody = document.getElementById('all-answers-tbody');
-    for (const q of quiz) {
-      const row = document.createElement('tr');
-      row.innerHTML = `<td>${q.question}</td><td>${q.input}</td><td>${q.correct}</td><td>${q.input === q.correct ? '○' : '×'}</td>`;
-      tbody.appendChild(row);
-    }
-  };
+  }
+})
   
