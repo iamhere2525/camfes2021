@@ -3,12 +3,12 @@ const app = new Vue({
   data: {
     tabNum: 0,
     correctImage: -1,
-    titles: ["尼子の部屋", "CM", "音楽祭"],
+    titles: ["開会式", "CM", "音楽祭"],
     questions: [
       {
-        question: "尼子の部屋のキーワードを打ってね",
+        question: "開会式のキーワードを打ってね",
         input: "",
-        correct: "尼子",
+        correct: "あ",
       },
       {
         question: "CMのキーワードを打ってね",
