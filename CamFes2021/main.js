@@ -121,7 +121,7 @@ const app = new Vue({
       },
       {
         explain: "",
-        image: "momokobaby.jpg",
+        image: "momokobaby.JPG",
       },
       {
         explain: "",
@@ -129,11 +129,11 @@ const app = new Vue({
       },
       {
         explain: "",
-        image: "yoshinobaby.jpg",
+        image: "yoshinobaby.JPG",
       },
       {
         explain: "",
-        image: "yamadababy.jpg",
+        image: "yamadababy.JPG",
       },
       {
         explain: "",
@@ -141,7 +141,7 @@ const app = new Vue({
       },
       {
         explain: "",
-        image: "yoshinagababy2.jpg",
+        image: "yoshinagababy2.JPG",
       },
       {
         explain: "",
@@ -157,7 +157,7 @@ const app = new Vue({
       },
       {
         explain: "",
-        image: "momokoobaby.jpg",
+        image: "momokoobaby.JPG",
       },
       {
         explain: "",
@@ -177,7 +177,7 @@ const app = new Vue({
       },
       {
         explain: "",
-        image:  "yamadababy2.jpg",
+        image:  "yamadababy2.JPG",
       },
     ]
   },
