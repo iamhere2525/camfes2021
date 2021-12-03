@@ -145,7 +145,7 @@ const app = new Vue({
       },
       {
         explain: "",
-        image:  "ayaibaby.jpg",
+        image:  "ayaibab.jpg",
       },
       {
         explain: "",
