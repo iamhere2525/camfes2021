@@ -102,26 +102,83 @@ const app = new Vue({
       },
 
     ],
-    images: [
-      "yoshinagababy.jpg",
-      "iidababy.jpg",
-      "fuzimotobaby.jpg",
-      "kobayashibaby.jpg",
-      "momokobaby.jpg",
-      "unenobaby.jpg",
-      "yoshinobaby.jpg",
-      "yamadababy.jpg",
-      "miyoshibaby.jpg",
-      "yoshinagababy2.jpg",
-      "ayaibaby.jpg",
-      "muraobaby.jpg",
-      "kakehibaby.jpg",
-      "momokoobaby.jpg",
-      "kawasakibaby.jpg",
-      "hondababy.jpg",
-      "minatomotobaby.jpg",
-      "ashidababy.jpg",
-      "yamadababy2.jpg",
+    bonusContents: [
+      {
+        explain: "",
+        image: "yoshinagababy.jpg",
+      },
+      {
+        explain: "飯田さんの赤ちゃんの時の写真です！！",
+        image: "iidababy.jpg",
+      },
+      {
+        explain: "",
+        image: "fuzimotobaby.jpg",
+      },
+      {
+        explain: "",
+        image: "kobayashibaby.jpg",
+      },
+      {
+        explain: "",
+        image: "momokobaby.jpg",
+      },
+      {
+        explain: "",
+        image: "unenobaby.jpg",
+      },
+      {
+        explain: "",
+        image: "yoshinobaby.jpg",
+      },
+      {
+        explain: "",
+        image: "yamadababy.jpg",
+      },
+      {
+        explain: "",
+        image: "miyoshibaby.jpg",
+      },
+      {
+        explain: "",
+        image: "yoshinagababy2.jpg",
+      },
+      {
+        explain: "",
+        image:  "ayaibaby.jpg",
+      },
+      {
+        explain: "",
+        image: "muraobaby.jpg",
+      },
+      {
+        explain: "",
+        image: "kakehibaby.jpg",
+      },
+      {
+        explain: "",
+        image: "momokoobaby.jpg",
+      },
+      {
+        explain: "",
+        image: "kawasakibaby.jpg",
+      },
+      {
+        explain: "",
+        image: "hondababy.jpg",
+      },
+      {
+        explain: "",
+        image: "minatomotobaby.jpg",
+      },
+      {
+        explain: "",
+        image:  "ashidababy.jpg",
+      },
+      {
+        explain: "",
+        image:  "yamadababy2.jpg",
+      },
     ]
   },
   computed: {
