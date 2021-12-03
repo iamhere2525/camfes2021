@@ -109,7 +109,7 @@ const app = new Vue({
       },
       {
         explain: "飯田さんの赤ちゃんの時の写真です！！",
-        image: "iidababy.jpg",
+        image: "iidababy.JPG",
       },
       {
         explain: "",
@@ -137,7 +137,7 @@ const app = new Vue({
       },
       {
         explain: "",
-        image: "miyoshibaby.jpg",
+        image: "miyoshibaby.JPG",
       },
       {
         explain: "",
