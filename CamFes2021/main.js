@@ -121,7 +121,7 @@ const app = new Vue({
       },
       {
         explain: "",
-        image: "momokobaby.JPG",
+        image: "momokobaby.jpg",
       },
       {
         explain: "",
