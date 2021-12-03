@@ -105,7 +105,7 @@ const app = new Vue({
     bonusContents: [
       {
         explain: "",
-        image: "yoshinagababy.jpg",
+        image: "yoshinagababy.JPG",
       },
       {
         explain: "飯田さんの赤ちゃんの時の写真です！！",
