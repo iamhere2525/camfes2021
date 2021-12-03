@@ -30,10 +30,10 @@
           <button @click="answer(index)" type="button" class="btn btn-primary" id="submit-button">回答する</button>
         </div>
       </div>
-      <div class="clear-images" v-for="(image, index) in images">
+      <div class="clear-images" v-for="(content, index) in bonusContents">
         <template  v-if="index === correctImage && index === tabNum" >
-          <p>正解！！</p>
-          <img class="image" :src="'./images/' + image" alt="">
+          <p>{{content.explain}}</p>
+          <img class="image" :src="'./images/' + content.image" alt="">
         </template>
       </div>
     </div>
