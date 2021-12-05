@@ -63,7 +63,7 @@ const app = new Vue({
       {
         question: "ダンスステージのキーワードを打ってね",
         input: "",
-        correct: "詐欺師or謎の資格保有者",
+        correct: "謎の資格保有者",
       },
       {
         question: "尼子の部屋2のキーワードを打ってね",
